@@ -1,0 +1,28 @@
+# Nuxt3関連
+.nuxt
+.output
+dist
+
+# 依存関係
+node_modules
+
+# 環境変数
+.env
+.env.*
+!.env.example
+
+# ログ
+*.log
+logs
+
+# OS固有ファイル
+.DS_Store
+Thumbs.db
+
+# エディタ設定(個人的な設定の場合)
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# AWS関連(Lambda開発時)
+*.zip
