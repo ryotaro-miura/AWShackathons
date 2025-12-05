@@ -1,0 +1,190 @@
+{
+  "users": [
+    {
+      "userId": "user-001",
+      "name": "山田太郎"
+    },
+    {
+      "userId": "user-002",
+      "name": "佐藤花子"
+    }
+  ],
+  "books": [
+    {
+      "userId": "user-001",
+      "title": "リーダブルコード",
+      "author": "Dustin Boswell, Trevor Foucher",
+      "category": "技術書",
+      "rating": 5,
+      "readDate": "2024-01-15",
+      "memo": "非常に読みやすく、コードの書き方について学べた。チーム全員に勧めたい一冊。"
+    },
+    {
+      "userId": "user-001",
+      "title": "クリーンアーキテクチャ",
+      "author": "Robert C. Martin",
+      "category": "技術書",
+      "rating": 4,
+      "readDate": "2024-02-20",
+      "memo": "アーキテクチャの設計思想が理解できた。実践には時間がかかりそう。"
+    },
+    {
+      "userId": "user-001",
+      "title": "人を動かす",
+      "author": "デール・カーネギー",
+      "category": "ビジネス",
+      "rating": 5,
+      "readDate": "2024-03-10",
+      "memo": "人間関係の基本が詰まった名著。何度も読み返したい。"
+    },
+    {
+      "userId": "user-001",
+      "title": "ノルウェイの森",
+      "author": "村上春樹",
+      "category": "小説",
+      "rating": 4,
+      "readDate": "2024-04-05",
+      "memo": "切ない恋愛小説。村上春樹の世界観が堪能できた。"
+    },
+    {
+      "userId": "user-001",
+      "title": "サピエンス全史",
+      "author": "ユヴァル・ノア・ハラリ",
+      "category": "歴史",
+      "rating": 5,
+      "readDate": "2024-05-18",
+      "memo": "人類の歴史を俯瞰できる素晴らしい本。視野が広がった。"
+    },
+    {
+      "userId": "user-002",
+      "title": "嫌われる勇気",
+      "author": "岸見一郎, 古賀史健",
+      "category": "自己啓発",
+      "rating": 5,
+      "readDate": "2024-01-25",
+      "memo": "アドラー心理学の入門書として最適。対話形式で読みやすい。"
+    },
+    {
+      "userId": "user-002",
+      "title": "React実践入門",
+      "author": "山田祥寛",
+      "category": "技術書",
+      "rating": 4,
+      "readDate": "2024-02-14",
+      "memo": "Reactの基礎から応用まで網羅されている。実践的な内容が多い。"
+    },
+    {
+      "userId": "user-002",
+      "title": "AWS認定資格試験テキスト",
+      "author": "山下光洋",
+      "category": "技術書",
+      "rating": 4,
+      "readDate": "2024-03-22",
+      "memo": "試験対策として活用。わかりやすい解説で理解が深まった。"
+    },
+    {
+      "userId": "user-002",
+      "title": "容疑者Xの献身",
+      "author": "東野圭吾",
+      "category": "小説",
+      "rating": 5,
+      "readDate": "2024-04-08",
+      "memo": "最後のどんでん返しに驚いた。ミステリーの傑作。"
+    },
+    {
+      "userId": "user-002",
+      "title": "論語と算盤",
+      "author": "渋沢栄一",
+      "category": "ビジネス",
+      "rating": 4,
+      "readDate": "2024-05-12",
+      "memo": "道徳と経済の両立について考えさせられる。現代でも通用する教え。"
+    },
+    {
+      "userId": "user-001",
+      "title": "Think clearly",
+      "author": "Rolf Dobelli",
+      "category": "自己啓発",
+      "rating": 4,
+      "readDate": "2024-06-01",
+      "memo": "52の思考法が紹介されている。毎日少しずつ実践したい。"
+    },
+    {
+      "userId": "user-001",
+      "title": "銃・病原菌・鉄",
+      "author": "ジャレド・ダイアモンド",
+      "category": "歴史",
+      "rating": 5,
+      "readDate": "2024-07-10",
+      "memo": "なぜ文明に格差が生まれたのかが理解できた。非常に興味深い。"
+    },
+    {
+      "userId": "user-002",
+      "title": "ゼロ秒思考",
+      "author": "赤羽雄二",
+      "category": "ビジネス",
+      "rating": 4,
+      "readDate": "2024-06-20",
+      "memo": "A4メモ書きの実践方法が具体的。思考の整理に役立ちそう。"
+    },
+    {
+      "userId": "user-002",
+      "title": "三体",
+      "author": "劉慈欣",
+      "category": "小説",
+      "rating": 5,
+      "readDate": "2024-07-15",
+      "memo": "中国SFの最高峰。スケールの大きさに圧倒された。続編も読みたい。"
+    },
+    {
+      "userId": "user-001",
+      "title": "プログラマの数学",
+      "author": "結城浩",
+      "category": "技術書",
+      "rating": 4,
+      "readDate": "",
+      "memo": "現在読書中。数学の基礎からアルゴリズムへの応用まで学べる。"
+    }
+  ],
+  "apiRequestExamples": [
+    {
+      "description": "技術書を登録する例",
+      "method": "POST",
+      "endpoint": "/books",
+      "body": {
+        "userId": "user-001",
+        "title": "Webを支える技術",
+        "author": "山本陽平",
+        "category": "技術書",
+        "rating": 4,
+        "readDate": "2024-08-01",
+        "memo": "HTTPやRESTの基礎が学べる。Web開発者必読の一冊。"
+      }
+    },
+    {
+      "description": "評価なし・メモなしで登録する例",
+      "method": "POST",
+      "endpoint": "/books",
+      "body": {
+        "userId": "user-002",
+        "title": "ファクトフルネス",
+        "author": "ハンス・ロスリング",
+        "category": "ビジネス",
+        "rating": 0,
+        "readDate": "",
+        "memo": ""
+      }
+    },
+    {
+      "description": "小説を登録する例（最小限の情報）",
+      "method": "POST",
+      "endpoint": "/books",
+      "body": {
+        "userId": "user-001",
+        "title": "1984年",
+        "author": "ジョージ・オーウェル",
+        "category": "小説"
+      }
+    }
+  ]
+}

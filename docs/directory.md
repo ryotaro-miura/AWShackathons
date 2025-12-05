@@ -21,12 +21,14 @@ book-management/
 ├── backend/                       # Lambda関数
 │   ├── dist/                     # ビルド後
 │   ├── src/
-│   │   ├── types/               # バックエンド用型定義
-│   │   ├── createBook.ts        # ロジック+ハンドラー
-│   │   ├── getBook.ts
-│   │   ├── updateBook.ts
-│   │   ├── deleteBook.ts
-│   │   └── listBooks.ts
+│   │   ├── index.ts             # エントリーポイント（全APIのルーティング）
+│   │   ├── utils/               # 各機能の実装
+│   │   │   ├── createBook.ts
+│   │   │   ├── getBook.ts
+│   │   │   ├── updateBook.ts
+│   │   │   ├── deleteBook.ts
+│   │   │   └── listBooks.ts
+│   │   └── types/   # バックエンド用型定義           
 │   ├── tests/                   # Jest
 │   ├── package.json
 │   └── tsconfig.json
